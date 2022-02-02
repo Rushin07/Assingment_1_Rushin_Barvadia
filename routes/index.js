@@ -1,4 +1,4 @@
-// Author: Julio Vinicius
+// Author: Rushin Barvadia
 // Date: 2022-01-27
 
 var express = require('express');
@@ -12,13 +12,20 @@ router.get('/', indexController.home);
 router.get('/projects', indexController.projects);
 
 /* GET About page. */
-router.get('/aboutme', function (req, res, next) {
-  res.render('index', { title: 'About Me' });
-});
+router.get('/aboutme', indexController.aboutme);
 
-router.get('/contactme', function (req, res, next) {
-  res.render('index', { title: 'Contact Me' });
 
-});
+router.get('/contactme', indexController.contactme);
+
+
+
+// router.get('/aboutme', function (req, res, next) {
+//   res.render('index', { title: 'About Me' });
+// });
+
+/*GET Contace Me Page*/
+// router.get('/contactme', function (req, res, next) {
+//   res.render('index', { title: 'Contact Me' });
+// });
 
 module.exports = router;
