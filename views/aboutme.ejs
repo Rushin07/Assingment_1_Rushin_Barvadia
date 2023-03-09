@@ -1,5 +1,6 @@
 <!-- aboutme.ejs for about details -->
-<% include partials/header.ejs %>
+
+<%- include('partials/header.ejs'); -%>
     <!-- <link rel="stylesheets" href="aboutme.css"> -->
     <div class="container">
 
@@ -36,7 +37,7 @@
                                 </p>
                                 <p>Here is the link to my Resume</p>
                                 <a class="btn btn-primary"
-                                    href="https://drive.google.com/file/d/1SftO1Dc_1QYvPeKAFz6jFcq_eS5BBrDv/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1KmVL75OZWvYKUx67PTloyEciri0NF_1Z/view?usp=sharing"
                                     role="button">My
                                     Resume</a>
                             </div>
@@ -46,4 +47,5 @@
             </div>
         </div>
     </div>
-    <% include partials/footer.ejs %>
+    <%- include('partials/footer.ejs'); -%>
+    
